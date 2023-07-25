@@ -12,7 +12,9 @@ app.get("/",(req,res)=>{
     
 })
 
-app.listen(3000,()=>{
+const PORT = process.env.PORT || 3001;
+
+app.listen(3001,()=>{
     console.log("el servirdor esta funcionando")
 })
 
