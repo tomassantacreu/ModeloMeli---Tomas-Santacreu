@@ -21,3 +21,5 @@ border-radius: 5px;
 
 .sumbit{background-color: #1259c3;
 color: white;}
+
+.sumbit:hover{background-color: #0022AA;}

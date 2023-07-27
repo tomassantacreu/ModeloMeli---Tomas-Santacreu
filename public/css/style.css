@@ -71,8 +71,11 @@ nav ul li {
   list-style: none;
   margin: 5px;
 }
-nav ul li a{color: black;
-text-decoration: none;}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
 
 .burger-menu {
   color: white;
@@ -80,6 +83,7 @@ text-decoration: none;}
   margin: 20px;
   display: block;
 }
+
 .fa-bars {
   background-color: #1259c3;
   border: 12px solid #1259c3;
@@ -106,7 +110,7 @@ section {
   width: 90vw;
 }
 
-section > h2 {
+section>h2 {
   font-size: 24px;
   margin: 20px 0px;
   color: #666;
@@ -123,9 +127,10 @@ article {
   margin-bottom: 10px;
 }
 
-.articulo-container > p {
+.articulo-container>p {
   font-size: 16px;
 }
+
 .articulo {
   border-top: 1px solid #ebebeb;
   padding: 15px;
@@ -135,6 +140,7 @@ article {
 img {
   width: 100%;
 }
+
 .fa-truck {
   display: block;
   font-size: 16px;
@@ -172,8 +178,14 @@ footer {
   color: #1259c3;
 }
 
-footer > div {
+footer>div {
   margin: 25px;
+}
+
+.copyright {
+  background-color: #1259c3;
+  color: white;
+  padding: 5px;
 }
 
 /* Responsive */
@@ -188,6 +200,7 @@ footer > div {
     flex-wrap: nowrap;
     justify-content: space-evenly;
   }
+
   .logo {
     padding: 0px;
   }
@@ -195,6 +208,7 @@ footer > div {
   header p {
     font-size: 1rem;
   }
+
   .logo,
   .search,
   header p {
@@ -231,10 +245,31 @@ footer > div {
   .burger-menu {
     display: none;
   }
+
   .descripcion {
-    display: block;
+    display: none;
   }
+
   .articulo-container {
     width: 20vw;
+    box-shadow: none;
+  }
+
+
+  footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .articulo-container:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+  .fa-truck:hover {
+    transform: rotate(270deg);
+  }
+
+  .articulo:hover>p {
+    display: block;
   }
 }
